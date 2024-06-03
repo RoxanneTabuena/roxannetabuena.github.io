@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Exo 2", Helvetica, sans-serif;
     margin: 0 auto;
     padding: 1px;
     text-align: center;
@@ -12,9 +12,17 @@ a {
     text-decoration: none;
 }
 
+a, li {
+    font-weight: bold;
+}
+
 body {
     background-color: whitesmoke;
     width: 750px;
+}
+
+h1 {
+    font-size: 3em;
 }
 
 main {
@@ -28,12 +36,8 @@ ul {
     align-items: center;
 }
 
-.card .col .title img {
-    width: 11em;
-}
-
-.card .col img {
-    width: 4em;
+.card .row {
+    width: 35em;
 }
 
 .col {
@@ -45,6 +49,10 @@ ul {
     width: 8em;
 }
 
+.link img{
+    width: 3em;
+}
+
 .proj {
     flex: 1;
 }
@@ -54,16 +62,21 @@ ul {
 }
 
 .row {
-    align-items: baseline;
+    align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: inherit;
 }
 
-.title h1{
-    font-size: 3em;
+.title {
+    width: 30em;
 }
 
-.title h2{
-    font-size: 1.5em;
+.title .row {
+    padding: 0em 1em;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 11em;
 }
